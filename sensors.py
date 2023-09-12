@@ -3,9 +3,9 @@ from datetime import datetime
 
 print("Sensor verileri dosyaya yaziliyor")
 
-raspName = "raspberry3"
-sensor1_name = raspName + 'sensor1.txt' 
-sensor2_name = raspName + 'sensor2.txt' 
+raspName = "raspberryname"
+sensor1_name = '../data/' + raspName + 'sensor1.txt' 
+sensor2_name = '../data/' + raspName + 'sensor2.txt' 
 
 sensor1 = 10
 sensor2 = 30
@@ -28,4 +28,3 @@ while True:
     print("yaziliyor")
     time.sleep(10)
     
-

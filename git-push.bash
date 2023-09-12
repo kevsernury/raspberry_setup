@@ -1,11 +1,10 @@
 #!/bin/bash
-cd ~/Desktop/data
-python "sensors.py"
 while true
-do
+do 
+ cd ~/Desktop/raspberry_sensors/data
  git add .
- git commit -m "raspberry3 `date`"
- git push origin
+ git commit -m "ubuntu `date`"
+ git push --set-upstream origin ubuntu
  echo "pushing"
  sleep 20
 done
